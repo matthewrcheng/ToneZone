@@ -152,8 +152,10 @@ const synth = new Tone.Synth().toDestination();
 var currentNote;
 var correct = false;
 var streak = 0;
+var maxStreak = 0;
 
 const streakValue = document.getElementById("streak-value");
+const maxStreakValue = document.getElementById("max-streak-value");
 
 function playRandomNote() {
     removeButtonColor();
@@ -189,6 +191,10 @@ function checkNoteSelection(event) {
         event.target.style.backgroundColor = "green";
         streak += 1;
         streakValue.textContent = streak;
+        if (streak > maxStreak) {
+            maxStreak = streak;
+            maxStreakValue.textContent = maxStreak;
+        }
     } else {
         if (correct) {
             return;
