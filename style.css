@@ -1,0 +1,71 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    background-color: #f0f8ff; /* Light background color */
+    color: #333; /* Dark text color for better contrast */
+    text-align: center;
+    padding: 20px; /* Increased padding for more space */
+}
+
+/* Header styles */
+h1 {
+    font-size: 3em; /* Larger font size */
+    color: #007acc; /* Tone Zone color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+button {
+    background-color: #007acc; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside buttons */
+    font-size: 1.2em; /* Larger text */
+    margin: 5px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #005999; /* Darker shade on hover */
+}
+
+/* Microtones container styles */
+#microtones {
+    display: flex; /* Flex layout for buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    justify-content: center; /* Center buttons */
+    margin-top: 20px; /* Space above microtones */
+}
+
+/* Microtones button styles */
+.microtones {
+    background-color: #66b3ff; /* Different color for microtones */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.microtones:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Streak display styles */
+#streak {
+    margin-top: 30px; /* Space above streak section */
+    padding: 10px; /* Padding around the streak display */
+    background-color: #e6f7ff; /* Light background for visibility */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Streak text styles */
+#streak p {
+    font-size: 1.5em; /* Larger text for streak display */
+    margin: 5px 0; /* Margin for spacing */
+}

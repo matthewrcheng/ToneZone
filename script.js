@@ -177,7 +177,11 @@ function playNote() {
 } 
 
 function replayNote() {
-    synth.triggerAttackRelease(currentNote, "8n");
+    if (!currentNote) {
+        playRandomNote();
+    } else {
+        synth.triggerAttackRelease(currentNote, "8n");
+    }
 }
 
 // Check if the clicked button's ID matches the mapping key
